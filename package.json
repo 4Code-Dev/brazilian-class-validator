@@ -1,6 +1,6 @@
 {
   "name": "brazilian-class-validator",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Additional decorators for class-validator using validators for Brazilian values",
   "main": "dist/brazilian-class-validator.js",
   "repository": "https://github.com/luisfelipesdn12/brazilian-class-validator.git",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "prepublishOnly": "npm build"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "class-validator",
