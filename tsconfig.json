@@ -7,10 +7,10 @@
     "target": "ES6",
     "lib": ["ES6"],
     "rootDir": "src",
-    "strict": true,
+    
     "types": ["node"],
     "typeRoots": ["./node_modules/@types"],
-    "alwaysStrict": true,
+    
     "noImplicitThis": true,
     "noImplicitReturns": true,
     "strictNullChecks": true,
