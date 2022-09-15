@@ -1,5 +1,7 @@
-import generateDecorator from '../utils/generateDecorator';
-import { isDDD } from 'brazilian-values';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const generateDecorator_1 = require("../utils/generateDecorator");
+const brazilian_values_1 = require("brazilian-values");
 /**
  * Check if value is a valid DDD.
  * @example ```js
@@ -27,5 +29,5 @@ import { isDDD } from 'brazilian-values';
  *
  * @see https://github.com/typestack/class-validator
  */
-const IsDDD = generateDecorator(isDDD, 'isDDD', '$property must be a valid DDD');
-export default IsDDD;
+const IsDDD = (0, generateDecorator_1.default)(brazilian_values_1.isDDD, 'isDDD', '$property must be a valid DDD');
+exports.default = IsDDD;

@@ -38,5 +38,5 @@
  *
  * @see https://github.com/typestack/class-validator
  */
-declare const IsPhone: (validationOptions?: import("class-validator").ValidationOptions | undefined) => (object: Object, propertyName: string) => void;
+declare const IsPhone: (validationOptions?: import("class-validator").ValidationOptions) => (object: Object, propertyName: string) => void;
 export default IsPhone;

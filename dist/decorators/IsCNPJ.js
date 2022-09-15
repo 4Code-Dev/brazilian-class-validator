@@ -1,5 +1,7 @@
-import generateDecorator from '../utils/generateDecorator';
-import { isCNPJ } from 'brazilian-values';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const generateDecorator_1 = require("../utils/generateDecorator");
+const brazilian_values_1 = require("brazilian-values");
 /**
  * Check if value is a valid CNPJ.
  * @example ```js
@@ -31,5 +33,5 @@ import { isCNPJ } from 'brazilian-values';
  *
  * @see https://github.com/typestack/class-validator
  */
-const IsCNPJ = generateDecorator(isCNPJ, 'isCNPJ', '$property must be a valid CNPJ');
-export default IsCNPJ;
+const IsCNPJ = (0, generateDecorator_1.default)(brazilian_values_1.isCNPJ, 'isCNPJ', '$property must be a valid CNPJ');
+exports.default = IsCNPJ;

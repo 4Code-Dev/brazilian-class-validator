@@ -1,5 +1,7 @@
-import generateDecorator from '../utils/generateDecorator';
-import { isPhone } from 'brazilian-values';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const generateDecorator_1 = require("../utils/generateDecorator");
+const brazilian_values_1 = require("brazilian-values");
 /**
  * Check if value is a valid brazilian phone number. It can check a wide
  * variety of formats optionally with DDI, DDD and the ninth digit.
@@ -40,5 +42,5 @@ import { isPhone } from 'brazilian-values';
  *
  * @see https://github.com/typestack/class-validator
  */
-const IsPhone = generateDecorator(isPhone, 'isPhone', '$property must be a valid phone');
-export default IsPhone;
+const IsPhone = (0, generateDecorator_1.default)(brazilian_values_1.isPhone, 'isPhone', '$property must be a valid phone');
+exports.default = IsPhone;

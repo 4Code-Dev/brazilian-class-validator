@@ -1,5 +1,7 @@
-import generateDecorator from '../utils/generateDecorator';
-import { isDate } from 'brazilian-values';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const generateDecorator_1 = require("../utils/generateDecorator");
+const brazilian_values_1 = require("brazilian-values");
 /**
  * Check if a brazilian formatted date is valid.
  * @example ```js
@@ -31,5 +33,5 @@ import { isDate } from 'brazilian-values';
  *
  * @see https://github.com/typestack/class-validator
  */
-const IsDate = generateDecorator(isDate, 'isDate', '$property must be a valid brazilian formatted date');
-export default IsDate;
+const IsDate = (0, generateDecorator_1.default)(brazilian_values_1.isDate, 'isDate', '$property must be a valid brazilian formatted date');
+exports.default = IsDate;

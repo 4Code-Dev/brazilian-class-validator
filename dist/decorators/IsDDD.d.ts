@@ -25,5 +25,5 @@
  *
  * @see https://github.com/typestack/class-validator
  */
-declare const IsDDD: (validationOptions?: import("class-validator").ValidationOptions | undefined) => (object: Object, propertyName: string) => void;
+declare const IsDDD: (validationOptions?: import("class-validator").ValidationOptions) => (object: Object, propertyName: string) => void;
 export default IsDDD;

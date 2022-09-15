@@ -1,8 +1,10 @@
-import { registerDecorator } from 'class-validator';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const class_validator_1 = require("class-validator");
 const generateDecorator = (validationFunc, name, message) => {
     return (validationOptions) => {
         return (object, propertyName) => {
-            registerDecorator({
+            (0, class_validator_1.registerDecorator)({
                 name: name,
                 target: object.constructor,
                 propertyName: propertyName,
@@ -16,4 +18,4 @@ const generateDecorator = (validationFunc, name, message) => {
         };
     };
 };
-export default generateDecorator;
+exports.default = generateDecorator;

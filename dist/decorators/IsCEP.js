@@ -1,5 +1,7 @@
-import generateDecorator from '../utils/generateDecorator';
-import { isCEP } from 'brazilian-values';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const generateDecorator_1 = require("../utils/generateDecorator");
+const brazilian_values_1 = require("brazilian-values");
 /**
  * Check if value is a valid CEP.
  * @example ```js
@@ -35,5 +37,5 @@ import { isCEP } from 'brazilian-values';
  *
  * @see https://github.com/typestack/class-validator
  */
-const IsCEP = generateDecorator(isCEP, 'isCEP', '$property must be a valid CEP');
-export default IsCEP;
+const IsCEP = (0, generateDecorator_1.default)(brazilian_values_1.isCEP, 'isCEP', '$property must be a valid CEP');
+exports.default = IsCEP;
